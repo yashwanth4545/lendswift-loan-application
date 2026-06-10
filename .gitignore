@@ -1,0 +1,31 @@
+# Dependencies
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor
+.vscode/*
+!.vscode/extensions.json
+.idea
+
+# Netlify
+.netlify
+
+# Cypress
+cypress/videos
+cypress/screenshots
+
+# TypeScript build info
+tsconfig.tsbuildinfo
+
+# Env
+.env
+.env.*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
