@@ -1,0 +1,96 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 210 40% 98%;
+    --foreground: 210 40% 10%;
+    --card: 0 0% 100%;
+    --card-foreground: 210 40% 10%;
+    --primary: 207 60% 30%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 210 30% 96%;
+    --secondary-foreground: 210 40% 20%;
+    --muted: 210 30% 96%;
+    --muted-foreground: 215 19% 38%;
+    --accent: 145 63% 42%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 6 78% 57%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 214 32% 91%;
+    --input: 214 32% 91%;
+    --ring: 207 60% 30%;
+    --radius: 0.75rem;
+
+    /* Step-themed ambient gradients (CSS-only, GPU composited) */
+    --ambient-1: 207 80% 95%;
+    --ambient-2: 145 60% 94%;
+    --ambient-accent: 207 60% 30%;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    min-height: 100dvh;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+
+    .dropzone-breathe {
+      animation: none !important;
+    }
+  }
+}
+
+@layer components {
+  /* Focus spotlight — soft glow follows focused inputs (no JS) */
+  .focus-spotlight:focus-within {
+    @apply relative;
+  }
+
+  .focus-spotlight:focus-within::before {
+    content: '';
+    @apply absolute -inset-1 rounded-xl opacity-0 transition-opacity duration-300 pointer-events-none;
+    background: radial-gradient(
+      ellipse at center,
+      hsl(var(--primary) / 0.08) 0%,
+      transparent 70%
+    );
+  }
+
+  .focus-spotlight:focus-within:focus-within::before {
+    @apply opacity-100;
+  }
+
+  /* Drop zone breathe — invites interaction without JS */
+  .dropzone-breathe {
+    animation: pulse-ring 3s ease-in-out infinite;
+  }
+
+  .dropzone-breathe:hover,
+  .dropzone-breathe:focus-within {
+    animation: none;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .gpu-layer {
+    transform: translateZ(0);
+    will-change: transform, opacity;
+  }
+}
