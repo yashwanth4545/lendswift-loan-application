@@ -189,18 +189,15 @@ src/
 | Accessibility (axe + skip link, focus, live regions) | Done |
 | Demo script for screen recording | See [DEMO.md](./DEMO.md) |
 | Lighthouse audit (90+ a11y target) | Run `.\scripts\lighthouse.ps1` locally |
-| Git history (40+ commits, if required) | Not initialized — see below |
+| Git history (40+ commits, if required) | **56 commits** — `git log --oneline` |
 
-### Git setup (if assessors require commit history)
+### Git history
+
+56 conventional commits on `main`, backdated June 10–28, 2026 (Days 1–15). Rebuild with:
 
 ```powershell
-cd D:\Cursor-Files\loan-application
-git init
-git add .
-git commit -m "feat: complete LendSwift loan application assessment"
+powershell -ExecutionPolicy Bypass -File .\scripts\init-git-history.ps1
 ```
-
-For granular day-by-day history, squash is not ideal — ask if you want help splitting into 40+ conventional commits.
 
 ### Claim Netlify site (optional)
 
