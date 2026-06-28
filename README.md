@@ -189,11 +189,11 @@ src/
 | Accessibility (axe + skip link, focus, live regions) | Done |
 | Demo script for screen recording | See [DEMO.md](./DEMO.md) |
 | Lighthouse audit (90+ a11y target) | Run `.\scripts\lighthouse.ps1` locally |
-| Git history (40+ commits, if required) | **58 commits** — `git log --oneline` |
+| Git history (40+ commits, if required) | **60 commits** — `git log --oneline` |
 
 ### Git history
 
-58 conventional commits on `main`, backdated June 10–28, 2026 (Days 1–15). Rebuild with:
+60 conventional commits on `main`, backdated June 10–28, 2026 (Days 1–15). Rebuild with:
 
 ```powershell
 powershell -ExecutionPolicy Bypass -File .\scripts\init-git-history.ps1
