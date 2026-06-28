@@ -1,0 +1,37 @@
+LendSwift — Project 1A Submission
+Zetheta Algorithms | Front End Developer Multi Step Loan Application Form
+================================================================================
+
+Candidate: Yashwanth Reddy Gudibandi
+Project: 8-step loan application (LendSwift)
+
+LINKS
+-----
+GitHub:     https://github.com/yashwanth4545/lendswift-loan-application
+Live demo:  https://lendswift-loan-application.netlify.app
+Demo video: demo/lendswift-demo.mp4 (included in this zip)
+
+QUICK START
+-----------
+1. npm install
+2. npm run dev          (or: powershell -File .\dev.ps1)
+3. npm run test:e2e:ci  (or: powershell -File .\test-e2e.ps1)
+
+DELIVERABLES CHECKLIST
+----------------------
+[x] 8-step wizard with cross-step validation
+[x] Personal / Home / Business loan types
+[x] PAN & Aadhaar verification simulation
+[x] Auto-save (AES-256) + resume modal
+[x] Document upload + compression + e-signature vault
+[x] Step 8 review, EMI summary, consents, success modal
+[x] 37 Cypress E2E tests (11 specs) — all passing
+[x] Accessibility: skip link, axe checks, focus management
+[x] Netlify deployment (live URL above)
+[x] 61+ conventional git commits
+
+NOTES FOR EVALUATOR
+-------------------
+- Test PIN codes: 560001, 110001, 400001
+- Test PAN: ABCPK1234L | Aadhaar: 234567890126
+- Portable Node scripts included (setup.ps1, dev.ps1, build.ps1)
