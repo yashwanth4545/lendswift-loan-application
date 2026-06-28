@@ -3,6 +3,18 @@
 Use this script for a screen recording or live walkthrough.  
 **Live URL:** https://lendswift-loan-application.netlify.app
 
+## Automated demo video (no voiceover)
+
+An automated walkthrough with on-screen captions can be generated locally:
+
+```powershell
+powershell -ExecutionPolicy Bypass -File .\record-demo.ps1
+```
+
+Output: **`demo/lendswift-demo.mp4`** (~1–2 min, all 8 steps + success modal).
+
+For a narrated submission video, play this recording and add voiceover in any editor, or record yourself following the steps below.
+
 ## Before you start
 
 - Open the live URL in Chrome (1280×800 or mobile 390×844)

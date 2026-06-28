@@ -189,6 +189,7 @@ src/
 | Cypress E2E (37 tests, 11 specs) | `.\test-e2e.ps1` |
 | Accessibility (axe + skip link, focus, live regions) | Done |
 | Demo script for screen recording | See [DEMO.md](./DEMO.md) |
+| **Demo video (automated)** | [demo/lendswift-demo.mp4](./demo/lendswift-demo.mp4) — run `.\record-demo.ps1` to regenerate |
 | Lighthouse audit (90+ a11y target) | Run `.\scripts\lighthouse.ps1` locally |
 | Git history (40+ commits, if required) | **60 commits** — `git log --oneline` |
 

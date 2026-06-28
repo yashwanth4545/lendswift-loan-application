@@ -5,6 +5,7 @@ export default defineConfig({
     baseUrl: process.env.CYPRESS_BASE_URL ?? 'http://127.0.0.1:4173',
     supportFile: 'cypress/support/e2e.ts',
     specPattern: 'cypress/e2e/**/*.cy.{js,ts}',
+    excludeSpecPattern: ['**/demo-recording.cy.ts'],
     viewportWidth: 1280,
     viewportHeight: 800,
     video: false,

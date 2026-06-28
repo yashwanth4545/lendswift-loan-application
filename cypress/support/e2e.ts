@@ -1,5 +1,6 @@
 import './commands';
 import './a11y';
+import './demo';
 import 'cypress-axe';
 
 beforeEach(() => {
