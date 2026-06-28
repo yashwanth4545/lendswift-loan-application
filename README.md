@@ -203,19 +203,14 @@ powershell -ExecutionPolicy Bypass -File .\scripts\init-git-history.ps1
 
 ### Submit to assessors
 
-Copy these three links:
+Copy these four links:
 
 1. **Repo:** https://github.com/yashwanth4545/lendswift-loan-application  
 2. **Live demo:** https://lendswift-loan-application.netlify.app  
-3. **Demo script:** [DEMO.md](./DEMO.md) (for screen recording)
+3. **Demo video:** [demo/lendswift-demo.mp4](./demo/lendswift-demo.mp4)  
+4. **Demo script:** [DEMO.md](./DEMO.md) (for narrated re-recording)
 
-Repo is **private** by default. To share with reviewers:
-
-```powershell
-gh repo edit yashwanth4545/lendswift-loan-application --visibility public
-```
-
-Or add assessors as collaborators: `gh repo edit --add-collaborator USERNAME`
+Repo visibility: **public** (assessors can view without access request).
 
 ### Claim Netlify site (optional)
 
