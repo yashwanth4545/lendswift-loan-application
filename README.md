@@ -183,7 +183,8 @@ src/
 
 | Item | Status |
 |------|--------|
-| Live demo URL | https://lendswift-loan-application.netlify.app |
+| **GitHub repository** | https://github.com/yashwanth4545/lendswift-loan-application |
+| **Live demo URL** | https://lendswift-loan-application.netlify.app |
 | 8-step wizard + cross-step validation | Done |
 | Cypress E2E (37 tests, 11 specs) | `.\test-e2e.ps1` |
 | Accessibility (axe + skip link, focus, live regions) | Done |
@@ -198,6 +199,22 @@ src/
 ```powershell
 powershell -ExecutionPolicy Bypass -File .\scripts\init-git-history.ps1
 ```
+
+### Submit to assessors
+
+Copy these three links:
+
+1. **Repo:** https://github.com/yashwanth4545/lendswift-loan-application  
+2. **Live demo:** https://lendswift-loan-application.netlify.app  
+3. **Demo script:** [DEMO.md](./DEMO.md) (for screen recording)
+
+Repo is **private** by default. To share with reviewers:
+
+```powershell
+gh repo edit yashwanth4545/lendswift-loan-application --visibility public
+```
+
+Or add assessors as collaborators: `gh repo edit --add-collaborator USERNAME`
 
 ### Claim Netlify site (optional)
 
