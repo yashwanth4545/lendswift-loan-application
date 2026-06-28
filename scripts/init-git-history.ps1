@@ -8,6 +8,11 @@ if (Test-Path .git) {
   exit 1
 }
 
+if (Test-Path (Join-Path $ProjectRoot 'scripts\.git')) {
+  Remove-Item -Recurse -Force (Join-Path $ProjectRoot 'scripts\.git')
+  Write-Host 'Removed stray scripts\.git from a prior failed init.' -ForegroundColor Yellow
+}
+
 $start = Get-Date '2026-06-10T09:00:00'
 $day = 0
 $commitInDay = 0
